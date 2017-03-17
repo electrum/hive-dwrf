@@ -137,7 +137,7 @@ public class TestOrcFile {
     Writer writer = OrcFile.createWriter(fs, testFilePath, conf, inspector,
         100000, CompressionKind.ZLIB, 10000, 10000);
     writer.addRow(new BigRow(false, (byte) 1, (short) 1, 1,
-        1L, (float) 1.0, 1.0, bytes(1), "1",
+        1L, (float) 1.0, 1.9, bytes(1), "1",
         new MiddleStruct(inner(1, "bye"), inner(2, "sigh")),
         list(inner(3, "good"), inner(4, "bad")),
         map(inner(3, "good"), inner(4, "bad"))));
@@ -156,7 +156,7 @@ public class TestOrcFile {
     assertEquals(1, row.getFieldValue(3).hashCode());
     assertEquals(1, row.getFieldValue(4).hashCode());
     assertEquals(1065353216, row.getFieldValue(5).hashCode());
-    assertEquals(1072693248, row.getFieldValue(6).hashCode());
+    assertEquals(1717986918, row.getFieldValue(6).hashCode());
     assertEquals(32, row.getFieldValue(7).hashCode());
     assertEquals(80, row.getFieldValue(8).hashCode());
     assertEquals(8417130, row.getFieldValue(9).hashCode());

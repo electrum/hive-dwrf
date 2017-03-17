@@ -178,7 +178,8 @@ public final class OrcStruct implements Writable {
       return null;
     }
 
-    public int getOffset() {
+    @Override
+    public int getFieldID() {
       return offset;
     }
   }
