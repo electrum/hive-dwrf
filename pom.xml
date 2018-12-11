@@ -20,7 +20,7 @@
     <parent>
         <groupId>io.airlift</groupId>
         <artifactId>airbase</artifactId>
-        <version>61</version>
+        <version>88</version>
     </parent>
 
     <groupId>com.facebook.hive</groupId>
@@ -48,11 +48,7 @@
     </scm>
 
     <properties>
-        <air.check.skip-findbugs>true</air.check.skip-findbugs>
-        <air.check.skip-pmd>true</air.check.skip-pmd>
-        <air.check.skip-jacoco>true</air.check.skip-jacoco>
-        <air.check.skip-modernizer>true</air.check.skip-modernizer>
-        <air.check.skip-license>true</air.check.skip-license>
+        <air.check.skip-extended>true</air.check.skip-extended>
         <air.javadoc.lint>-missing</air.javadoc.lint>
     </properties>
 
